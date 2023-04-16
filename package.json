@@ -1,0 +1,13 @@
+{
+  "name": "bullmq-sandbox-processor",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "redis": "docker compose up --force-recreate -d",
+    "test-watch": "node --watch index.js",
+    "test-no-watch": "node index.js"
+  },
+  "dependencies": {
+    "bullmq": "^3.10.4"
+  }
+}
